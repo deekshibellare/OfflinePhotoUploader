@@ -37,7 +37,7 @@ class PhotoUploader {
     static let shared = PhotoUploader()
     init() {
         uploadClient = CloudinaryUploadClient()
-        persistenceStore = PersistentStore(folderName: "iControl")
+        persistenceStore = PersistentStore(folderName: "Store")
     }
 
     /// Create the photo uploader instance with configration and persistacne store

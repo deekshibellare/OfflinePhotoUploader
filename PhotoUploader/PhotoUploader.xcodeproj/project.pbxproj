@@ -12,11 +12,14 @@
 		4514101A216A61E700B56D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45141018216A61E700B56D25 /* Main.storyboard */; };
 		4514101C216A61E900B56D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4514101B216A61E900B56D25 /* Assets.xcassets */; };
 		4514101F216A61E900B56D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4514101D216A61E900B56D25 /* LaunchScreen.storyboard */; };
-		4514102A216A61E900B56D25 /* PhotoUploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45141029216A61E900B56D25 /* PhotoUploaderTests.swift */; };
 		4514103D216A636D00B56D25 /* PhotoUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514103A216A636D00B56D25 /* PhotoUploader.swift */; };
 		4514103E216A636D00B56D25 /* CloudinaryUploadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514103B216A636D00B56D25 /* CloudinaryUploadClient.swift */; };
 		4514103F216A636D00B56D25 /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514103C216A636D00B56D25 /* PersistentStore.swift */; };
 		4568DDF1216A6C8100DCCA4A /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568DDF0216A6C8100DCCA4A /* ImageHelper.swift */; };
+		45B09D2B216CB64500026597 /* PersistenceStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B09D29216CB64500026597 /* PersistenceStoreTests.swift */; };
+		45B09D2E216CB6CC00026597 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B09D2D216CB6CC00026597 /* Media.xcassets */; };
+		45B09D30216CB76300026597 /* UnitTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B09D2F216CB76300026597 /* UnitTestHelper.swift */; };
+		45B09D34216CC2C100026597 /* PhotoUploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45141029216A61E900B56D25 /* PhotoUploaderTests.swift */; };
 		5E44BA7B2501225CF9D7A69C /* Pods_PhotoUploaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD2C08C94F0855BE5AD6ED4 /* Pods_PhotoUploaderTests.framework */; };
 		EAB16191420CE92F4C673A6B /* Pods_PhotoUploader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673B1F21BD188D371BD6A4C5 /* Pods_PhotoUploader.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +51,9 @@
 		4514103B216A636D00B56D25 /* CloudinaryUploadClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudinaryUploadClient.swift; sourceTree = "<group>"; };
 		4514103C216A636D00B56D25 /* PersistentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
 		4568DDF0216A6C8100DCCA4A /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		45B09D29216CB64500026597 /* PersistenceStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceStoreTests.swift; sourceTree = "<group>"; };
+		45B09D2D216CB6CC00026597 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		45B09D2F216CB76300026597 /* UnitTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestHelper.swift; sourceTree = "<group>"; };
 		5B5A03E02A640AC41861B00C /* Pods-PhotoUploaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoUploaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoUploaderTests/Pods-PhotoUploaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		673B1F21BD188D371BD6A4C5 /* Pods_PhotoUploader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoUploader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA392774A584CA666DF6C0C8 /* Pods-PhotoUploaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoUploaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoUploaderTests/Pods-PhotoUploaderTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,8 +118,11 @@
 		45141028216A61E900B56D25 /* PhotoUploaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				45B09D29216CB64500026597 /* PersistenceStoreTests.swift */,
 				45141029216A61E900B56D25 /* PhotoUploaderTests.swift */,
+				45B09D2F216CB76300026597 /* UnitTestHelper.swift */,
 				4514102B216A61E900B56D25 /* Info.plist */,
+				45B09D2D216CB6CC00026597 /* Media.xcassets */,
 			);
 			path = PhotoUploaderTests;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B09D2E216CB6CC00026597 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4514102A216A61E900B56D25 /* PhotoUploaderTests.swift in Sources */,
+				45B09D2B216CB64500026597 /* PersistenceStoreTests.swift in Sources */,
+				45B09D30216CB76300026597 /* UnitTestHelper.swift in Sources */,
+				45B09D34216CC2C100026597 /* PhotoUploaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
